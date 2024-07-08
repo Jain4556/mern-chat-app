@@ -15,8 +15,9 @@ const Messages = () => {
     }, 100);
   }, [messages])
   
+
   return (
-    <div className='px-4 flex-1 overflow-auto'>
+    <div className='md-min-w-[450px] px-4 flex-1 overflow-auto'>
       {!loading && messages.length > 0 &&  
       messages.map((message) => 
         <div key={message._id}
